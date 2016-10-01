@@ -16,7 +16,74 @@
         <img src="//code.divshot.com/geo-bootstrap/img/test/mchammer.gif">
       </div>
       <p class="lead">Sie haben eine Maßgeschneiderte Homepage aus dem selben Hause wie dieses Prachtwerk hier gewonnen!</p>
-      <a class="btn btn-primary btn-large" href="#">Klicken Sie hier um Ihren Preis einzufordern</a>
+      <a href="#myModal" role="button" data-toggle="modal" class="btn btn-primary btn-large">Klicken Sie hier um Ihren Preis einzufordern</a>
+      <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel">Bestätigung</h3>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal" role="form">
+            <fieldset>
+              <legend>Bitte geben Sie zur Verifzierung Ihres Preises Ihre Kreditkartennummer ein</legend>
+              <div class="control-group">
+                <label class="control-label" for="card-holder-name">Name</label>
+                <div class="controls">
+                  <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" placeholder="">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="card-number">Kartennummer</label>
+                <div class="controls">
+                  <input type="text" class="form-control" name="card-number" id="card-number" placeholder="">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="expiry-month">Gültig bis</label>
+                <div class="controls">
+                  <select class="form-control span2" name="expiry-month" id="expiry-month">
+                    <option>Month</option>
+                    <option value="01">Jan (01)</option>
+                    <option value="02">Feb (02)</option>
+                    <option value="03">Mar (03)</option>
+                    <option value="04">Apr (04)</option>
+                    <option value="05">May (05)</option>
+                    <option value="06">June (06)</option>
+                    <option value="07">July (07)</option>
+                    <option value="08">Aug (08)</option>
+                    <option value="09">Sep (09)</option>
+                    <option value="10">Oct (10)</option>
+                    <option value="11">Nov (11)</option>
+                    <option value="12">Dec (12)</option>
+                  </select><br>
+                  <select class="form-control" name="expiry-year">
+                    <option value="13">2013</option>
+                    <option value="14">2014</option>
+                    <option value="15">2015</option>
+                    <option value="16">2016</option>
+                    <option value="17">2017</option>
+                    <option value="18">2018</option>
+                    <option value="19">2019</option>
+                    <option value="20">2020</option>
+                    <option value="21">2021</option>
+                    <option value="22">2022</option>
+                    <option value="23">2023</option>
+                  </select>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="cvv">CVV</label>
+                <div class="controls">
+                  <input type="text" class="form-control" name="cvv" id="cvv" placeholder="">
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary">Weiter</button>
+        </div>
+      </div>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
